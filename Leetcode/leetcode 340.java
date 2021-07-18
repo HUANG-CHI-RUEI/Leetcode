@@ -41,7 +41,7 @@ public class Solution {
 
 public class Solution {
     public int lengthOfLongestSubstringKDistinct(String s, int k) {
-        int[] couunt = new int[128];
+        int[] count = new int[128];
         int maxLen = 0;
         for(int lo = 0, hi = 0, numDistinct = 0; hi < s.length(); hi++) {
             char letter = s.charAt(hi);
@@ -54,7 +54,7 @@ public class Solution {
                 if(count[letter] == 0) numDistinct--;
             }
 
-            maxLen = hi - lo + 1;
+            maxLen = Math.max(maxLen, hi - lo + 1);
         }
         return maxLen;
     }
