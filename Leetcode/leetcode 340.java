@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 import java.util.HashMap;
+=======
+// This is a problem asked by Google.
+// Given a string, find the longest substring that contains only two unique characters. 
+// For example, given "abcbbbbcccbdddadacb",
+// the longest substring that contains 2 unique character is "bcbbbbcccb".
+>>>>>>> a079afa0ceec3944b3710e190fa2be0ff85d4515
 
 // 1. HashMap:
 // TC: O(n).
 // SC: O(n)
+
+
 
 public class Solution {
     public int lengthOfLongestSubstringKDistinct(String s, int k) {
@@ -44,7 +53,12 @@ public class Solution {
                 count[letter]--;
                 if(count[letter] == 0) numDistinct--;
             }
+<<<<<<< HEAD
             maxLen = hi - lo + 1;
+=======
+
+            maxLen = Math.max(maxLen, hi - lo + 1);
+>>>>>>> a079afa0ceec3944b3710e190fa2be0ff85d4515
         }
         return maxLen;
     }
