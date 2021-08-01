@@ -35,7 +35,7 @@ class Solution:
 
 
 '''
-2. Heap:
+2. Heap: https://www.youtube.com/watch?v=NDToQ-nbguE&list=PL7O5Ubado0Q3azAJdEtqREuHj13d-fCR0&index=5&ab_channel=%E4%BB%8A%E5%A4%A9%E6%AF%94%E6%98%A8%E5%A4%A9%E5%8E%B2%E5%AE%B3
 TC:O(nlogn)
 SC:O(n)
 '''
