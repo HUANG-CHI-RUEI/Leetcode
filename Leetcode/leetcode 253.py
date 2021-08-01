@@ -32,3 +32,29 @@ class Solution:
             res = max(res, count)
 
         return res
+
+
+'''
+2. Heap:
+TC:O(nlogn)
+SC:O(n)
+'''
+from heapq import *
+class Solution:
+    def minMeetingRooms(self, intervals):
+        # edge check:
+        if not intervals:
+            return 0
+
+        intervals.sort()
+        rooms = []
+        heapq.heappush(rooms, intervals[0][1])
+        i = 1
+
+        while i < len(intervals):
+            if rooms[0] <= intervals[i][0]:
+                heapq.heappop(room)
+            heapq.heappush(rooms, intervals[i][1])
+            i += 1
+            
+        return len(rooms)
