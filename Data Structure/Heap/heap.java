@@ -14,7 +14,7 @@ public class MinIntHeap{
     private boolean hasRightChild(int index) {return getRightChildIndex(index) < size;}
     private boolean hasParent(int index) {return getParentIndex(index) >= 0;}
 
-    private int leftChild(int index) { return items[getLeftChildInde([index)];}
+    private int leftChild(int index) { return items[getLeftChildIndex(index)];}
     private int rightChild(int index) { return items[getRightChildIndex(index)];}
     private int parent(int index) { return items[getParentIndex(index)];}
 
