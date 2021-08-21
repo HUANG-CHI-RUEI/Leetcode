@@ -36,7 +36,7 @@ def deleteNode(root, val);
         return root 
     elif val > root.val:
         root.right = deleteNode(root.right, val)
-        return val
+        return root
 
     # If one of the children is empty
     if root.left is None:
